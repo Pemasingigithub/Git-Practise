@@ -37,7 +37,6 @@ while True:
     print(option_input)
 
     n1 = int(input("Enter first number:_"))  # Input first number
-
     n2 = int(input("Enter the second number:_"))  # Input second number
 
     try:
