@@ -23,28 +23,28 @@ class Div(Mul):
     pass
     def division(self):
       return self.number1/self.number2 #Divison4
-n1 = ''
-n2 = ''
-#object created
-a = Add(n1, n2)  # Parameter pass
-s = Sub(n1, n2)
-m = Mul(n1, n2)
-d = Div(n1, n2)
 
 while True:
     print("What do you want?")
     option_input=("1.Addition\n 2.Subtract\n 3.Multiply \n 4.Divide ")
     print(option_input)
 
-    n1 = int(input("Enter first number:_"))  # Input first number
-    n2 = int(input("Enter the second number:_"))  # Input second number
-
     try:
      select_number=int(input("Select the above option:_"))
     except ValueError:
              exit("Give only integer value")
 
+    n1 = int(input("Enter first number:_"))  # Input first number
+    n2 = int(input("Enter the second number:_"))  # Input second number
+
+    # object created
+    a = Add(n1, n2)  # Parameter pass
+    s = Sub(n1, n2)
+    m = Mul(n1, n2)
+    d = Div(n1, n2)
+
     if select_number == 1:
+
             print("Result is:", a.addition())
 
 
@@ -54,8 +54,6 @@ while True:
 
     elif select_number == 3:
             print("The result is:", m.multiplication())
-
-
     elif select_number == 4:
             print("The result is:", d.division())
     else:
