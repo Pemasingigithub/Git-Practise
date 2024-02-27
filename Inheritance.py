@@ -1,7 +1,7 @@
 class Calculator:
-    def __init__(self,f,s):
-        self.first=f
-        self.second=s
+    def __init__(self,f, s):
+        self.first = f
+        self.second = s
 class Add(Calculator):
     super().__init__()
     def add_number(self):

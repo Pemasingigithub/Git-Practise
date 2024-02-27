@@ -4,27 +4,31 @@ def hangman_game():
   print('''
              ~Lets play the hangman game pema sir or relatives of pema sir~ 
            ******************************************************************''')
-  gamer_name=input("Enter your name:_").capitalize()
-  gamer_relation=input("Enter your relation with pema Singi Waiba[bro/sis/sir/mam/student]:_")
+  gamer_name = input("Enter your name:_").capitalize()
+  gamer_relation = input("Enter your relation with pema Singi Waiba[bro/sis/sir/mam/student/friend]:_")
 
-  if gamer_relation=='brother' or gamer_relation=='bro' or gamer_relation=='Brother':
-         print("Hello {}".format(gamer_name),'{}  I know you are my relatives get ready to play hangman game'
+  if gamer_relation == 'brother' or gamer_relation == 'bro' or gamer_relation == 'Brother':
+         print("Hello {}".format(gamer_name), '{}  I know you are my relatives get ready to play hangman game'
                .format(gamer_relation))
-  elif gamer_relation=='sister' or gamer_relation=='sis' or gamer_relation=='Sister':
+  elif gamer_relation == 'sister' or gamer_relation == 'sis' or gamer_relation == 'Sister':
           print("Hello {}".format(gamer_name),
                 '{}  I know you are my relatives get ready to play hangman game'
                 .format(gamer_relation))
-  elif gamer_relation=='sir' or gamer_relation=='Sir':
+  elif gamer_relation == 'sir' or gamer_relation == 'Sir':
           print("Hello {}".format(gamer_name),
                 "{}  I know you are my respected sir get ready to play hangman game"
                 .format(gamer_relation))
-  elif gamer_relation=='mam' or gamer_relation=='Mam':
+  elif gamer_relation == 'mam' or gamer_relation == 'Mam':
           print("Hello {}".format(gamer_name),
                 '{}  I know you are my relatives get ready to play hangman game'
                 .format(gamer_relation))
-  elif gamer_relation=='student' or gamer_relation=='Student':
+  elif gamer_relation == 'student' or gamer_relation == 'Student':
       print("Hello {}".format(gamer_name),
             "{}  I know you are my close student get ready to play hangman game"
+            .format(gamer_relation)) 
+  elif gamer_relation == 'friend' or gamer_relation == 'Friend':
+      print("Hello {}".format(gamer_name),
+            "{}  K cha tw sathi"
             .format(gamer_relation))
   else:
           print("Hello it's {}".format(gamer_relation),
@@ -38,16 +42,16 @@ def hangman_game():
   guesess=''
   turns=10
   while turns>0:
-    failed=0
+    failed = 0
     for char in word:
      if char in guesess:
         print(char, end='')
      else:
         print('_', end='')
-        failed+=1
+        failed += 1
 
 
-    if failed==0:
+    if failed == 0:
         print(" word generate")
         print("You won the game")
         exit_game()
