@@ -21,14 +21,16 @@ class Manager(Employee):
 
 def main_form():
     print("""Employee details
-    ================""")
+================""")
     n = input("Enter the name:_")
     s = float(input("Enter the salary:_"))
     e1 = Employee(n, s)
     name = e1.getName()
     print("Total salary for {} is Rs {}".format(name.capitalize(), e1.getSalary()))
 
-    print("Manager details")
+    print("""
+| Manager details |
+___________________""")
     n = input("Enter the name:_")
     s = float(input("Enter the salary:_"))
     b = float(input("Enter the bonus:_"))
