@@ -1,3 +1,4 @@
+from exit import exit_function, student_info
 class Employee:
     def __init__(self, n, s):
         self.name = n
@@ -37,13 +38,8 @@ ___________________""")
     m1 = Manager(n, s, b)
     name = m1.getName()
     print("Total salary for {} is Rs {}".format(name.capitalize(), m1.getSalary()))
-    exit_function()
-
-
-def exit_function():
-    yesno = input("Do you want continue[y or n]:_")
+    yesno = exit_function()
     if yesno == 'y' or yesno == 'Y':
         main_form()
-
-
+name1, Id = student_info()
 main_form()
