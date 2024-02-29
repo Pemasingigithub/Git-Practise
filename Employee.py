@@ -19,8 +19,29 @@ class Manager(Employee):
         return self.salary + self.bonus
 
 
-e1 = Employee('Ram', 8000)
-print("Total salary for {} is Rs {}".format(e1.getName(), e1.getSalary()))
+def main_form():
+    print("""Employee details
+    ================""")
+    n = input("Enter the name:_")
+    s = float(input("Enter the salary:_"))
+    e1 = Employee(n, s)
+    name = e1.getName()
+    print("Total salary for {} is Rs {}".format(name.capitalize(), e1.getSalary()))
 
-m1 = Manager("Simon", 3000, 4000)
-print("Total salary for {} is Rs {}".format(m1.getName(), m1.getSalary()))
+    print("Manager details")
+    n = input("Enter the name:_")
+    s = float(input("Enter the salary:_"))
+    b = float(input("Enter the bonus:_"))
+    m1 = Manager(n, s, b)
+    name = m1.getName()
+    print("Total salary for {} is Rs {}".format(name.capitalize(), m1.getSalary()))
+    exit_function()
+
+
+def exit_function():
+    yesno = input("Do you want continue[y or n]:_")
+    if yesno == 'y' or yesno == 'Y':
+        main_form()
+
+
+main_form()
