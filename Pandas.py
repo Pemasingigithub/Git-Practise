@@ -7,4 +7,4 @@ dict1 = {
 }
 
 df = pd.DataFrame(dict1)
-df.head()
+print(df.head())
