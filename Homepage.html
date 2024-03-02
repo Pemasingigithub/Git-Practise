@@ -2,10 +2,39 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Website</title>
 </head>
 <body>
-<h1>Hello world</h1>
+<nav>
+<div>
+  <a href="#" >Home</a>
+  <a href="#" >Contact Us</a>
+  <a href="#" >About Us</a>
+  <a href="#" >Gallery</a>
+</div>
+</nav><br><br>
+<h3><u>HTML Form</u></h3>
+
+<div>
+  <form action="/action_page.php">
+    <label for="fname">First Name:</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name.."><br><br>
+
+    <label for="lname">Last Name:</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name.."><br><br>
+
+    <label for="country">Country:</label>
+    <select id="country" name="country">
+        <option value="select">Select Country</option>
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
 
 </body>
 </html>
