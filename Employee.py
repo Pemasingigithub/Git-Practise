@@ -1,4 +1,6 @@
 from exit import exit_function, student_info
+
+
 class Employee:
     def __init__(self, n, s):
         self.name = n
@@ -41,5 +43,7 @@ ___________________""")
     yesno = exit_function()
     if yesno == 'y' or yesno == 'Y':
         main_form()
+
+
 name1, Id = student_info()
 main_form()
